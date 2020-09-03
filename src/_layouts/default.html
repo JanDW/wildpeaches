@@ -3,14 +3,13 @@ title: Wild Peaches
 ---
 
 <!DOCTYPE html>
-<html lang="en-US" dir='ltr'>
-  <!-- Did you know the largest living organism is a fungus spanning 2200 acres? I don't know about you, but I find that disturbing. -->
-  {% include "head" %}
-
-  <body class="font-base text-lg overflow-x-hidden home-font-features {% if bodyClass %}{{ bodyClass }}{% endif %}">
-    {% include 'global-nav' %}
+<html lang="en-US" dir="ltr">
+  {% include 'head.html' %}
+  <body
+    class="font-base text-lg overflow-x-hidden home-font-features {% if bodyClass %}{{ bodyClass }}{% endif %}"
+  >
+    {% include 'global-nav.html' %} 
     {{ content | safe}}
-    {% include 'footer' %}
+    {% include 'footer.html' %}
   </body>
-
 </html>
