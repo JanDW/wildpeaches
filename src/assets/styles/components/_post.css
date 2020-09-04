@@ -1,4 +1,10 @@
-.post { 
+.post p,
+.post ul,
+.post ol,
+.post dl { 
+ /* font-family: Georgia, serif; */
+ @apply text-xl;
+ max-width: 34em;
 }
 
 .post > blockquote {
@@ -16,6 +22,10 @@
 
 .post > .title > h1 {
   @apply text-2xl font-semibold;
+}
+
+.post > .title > p {
+  font-family: var(--font-family--sans);
 }
 
 .post > h2 {
@@ -64,30 +74,37 @@
   @apply my-8;
 }
 
-.post > .title {
-  @apply mb-12;
+.post .lede,
+.post .lead {
+  @apply text-gray-700 text-xl font-medium leading-snug pt-8 pb-4;
+  font-family: var(--font-family--sans);
 }
 
-.post > .title > h1 {
+@screen lg {
+  .post .lede,
+  .post .lead {
+    @apply text-2xl;
+  }
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0,0%,0%,.2);
+  position: absolute;
+  z-index: 10;
+}
+
+.meta {
+  z-index: 20;
+}
+
+.meta > h1 {
   @apply text-2xl font-semibold;
 }
 
-
-.post > .author {
-  @apply mt-4 inline-block;
-}
-
-.post-date {
-  display: inline-block;
-  padding: 0 0.75em;
-  transform: skewX(-10deg);
-  background-color: #56a4bc;
-}
-
-.post-date__text {
-  display: inline-block;
-  color: #fff;
-  transform: skewX(10deg);
-  font-size: 90%;
-  font-weight: 500;
+.katex-block {
+  @apply bg-gray-200 p-2;
 }

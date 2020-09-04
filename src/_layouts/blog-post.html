@@ -1,23 +1,34 @@
 ---
 layout: default
-bodyClass: text-gray-800 bg-gray-200
+bodyClass: text-gray-800 bg-white
 ---
 
 <main id="main">
+  <div class="hero relative">
+    <img
+      src="{{ hero.url }}"
+      style="max-height: 60vh; object-fit: cover; width: 100%;"
+      alt=""
+      loading="lazy"
+    />
+    <div class="meta absolute bottom-0 w-full pb-16 text-white">
+      <div class="content-wrapper border-white border-l-4">
+        <div class="date">
+          <time datetime="{{ page.date | w3DateFilter }}"></time>
+          {{ page.date | dateFilter }}
+        </div>
+        <div class="title">
+          <h1 class="text-5xl font-semibold">{{ title }}</h1>
+          {% if subtitle %}
+          <p class="mt-0">{{ subtitle }}</p>
+          {% endif %}
+          <span class="byline block mt-4">by <span class="uppercase tracking-widest text-sm">{{ author }}</span> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="post content-wrapper">
-    <div class="date">
-      <time datetime="{{ page.date | w3DateFilter }}"></time>
-      {{ page.date | dateFilter }}
-    </div>
-    <div class="title">
-      <h1>{{ title }}</h1>
-      {% if subtitle %}
-      <p class="mt-0">{{ subtitle }}</p>
-      {% endif %}
-      <span class="byline"
-        >by <span>{{ author }}</span>
-      </span>
-    </div>
     {{ content | safe }}
   </div>
 </main>

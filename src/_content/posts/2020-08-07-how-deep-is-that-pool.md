@@ -1,12 +1,14 @@
 ---
-title: How deep is that pool?
+title: How Deep Is That Pool?
 subtitle: The mathematics of COVID-19 testing
 author: John Peach
 date: 2020-08-07
+hero:
+    url: https://images.unsplash.com/photo-1596978759889-91e1a654faca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
 tags: [math, covid-19]
 ---
 
-To control the COVID-19 pandemic requires rapid testing of a large number of people. One way to do this is to apply pool testing where a single test can be run on the combined samples taken from a group. [The American Society for Microbiology thinks it's time to jump in the pool](https://asm.org/Articles/2020/July/COVID-19-Pool-Testing-Is-It-Time-to-Jump-In) and [STAT agrees](https://www.statnews.com/2020/06/26/pool-testing-covid-19/).
+To control the COVID-19 pandemic requires rapid testing of a large number of people. One way to do this is to apply pool testing where a single test can be run on the combined samples taken from a group. [The American Society for Microbiology thinks it's time to jump in the pool](https://asm.org/Articles/2020/July/COVID-19-Pool-Testing-Is-It-Time-to-Jump-In) and [STAT agrees](https://www.statnews.com/2020/06/26/pool-testing-covid-19/).{.lede}
 
 Here's an example of how pool testing works. Suppose the test requires a drawn blood sample. Then samples from say 50 people could be mixed together in a test tube and the test applied to the combined sample. If it comes back negative then we know that everyone in the group is not infected and with one test we've eliminated a large number of people from further testing. In cases where a large fraction of the population remains susceptible this can greatly reduce the number of tests needed.
 

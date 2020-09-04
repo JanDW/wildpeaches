@@ -3,10 +3,12 @@ title: The Boonie Conundrum
 subtitle: Monte Carlo simulation of a conspiracy
 author: John Peach
 tags: [math]
+hero:
+    url: https://images.unsplash.com/photo-1585747354995-bf346fd32d9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
 keywords: [Monte Carlo simulation, conspiracies, Gompertz Survival Function]
 ---
 
-This is the tale of the Great Boonie Conspiracy in which we show through the mathematics of the Gompertz Survival Function that all conspiracies must fail. It's the story of a coverup by people who didn't cover up and were exposed in the end.
+This is the tale of the Great Boonie Conspiracy in which we show through the mathematics of the Gompertz Survival Function that all conspiracies must fail. It's the story of a coverup by people who didn't cover up and were exposed in the end.{.lede}
 
 The high school is an imposing brick building with soaring white columns and a semi-circular drive enclosing an expansive lawn with tall shady oak trees. Go around to the back and you'll find the sports field where Boonie led the boys' soccer team. 
 
@@ -18,7 +20,7 @@ Monday morning's school announcements included one for Boonie to report to the p
 >
 > Unfortunately, what we thought was fun and games turned out to be very offensive.
 >
-> Children of all ages saw us strutting around in our sports shorts; we didn’t consider the consequences of such immature humor.
+> Children of all ages saw us strutting around in our sports shorts; we didn’t consider the consequences of such immature humor. 
 >
 > Kids our age have been having high school carwashes to support our teams, and what we thought was the norm turned out to be disastrous.
 
