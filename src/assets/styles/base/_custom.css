@@ -178,13 +178,18 @@ h3::before {
   background-color: #ede6d7;
 }
 
-a,
-a:link {
+a {
   text-decoration: underline;
   /* color: #137752; */
-  text-decoration-color: theme('colors.blue.600');
+  text-decoration-color: theme('colors.gray.400');
   /* text-underline-position: under; */
   /* text-decoration-style: wavy;  */
+}
+
+a:hover,
+a:active {
+  color: theme('colors.blue.700');
+  text-decoration-color: currentColor;
 }
 
 /* .global-footer {
