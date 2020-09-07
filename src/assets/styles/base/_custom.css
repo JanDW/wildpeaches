@@ -170,6 +170,7 @@ a {
   text-decoration: underline;
   /* color: #137752; */
   text-decoration-color: theme('colors.gray.400');
+  @apply font-semibold;
   /* text-underline-position: under; */
   /* text-decoration-style: wavy;  */
 }

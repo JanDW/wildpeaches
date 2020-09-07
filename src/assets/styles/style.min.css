@@ -14730,6 +14730,7 @@ a {
   text-decoration: underline;
   /* color: #137752; */
   text-decoration-color: #cbd5e0;
+  font-weight: 600;
   /* text-underline-position: under; */
   /* text-decoration-style: wavy;  */
 }
