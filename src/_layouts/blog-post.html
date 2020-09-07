@@ -5,12 +5,14 @@ bodyClass: text-gray-800 bg-white
 
 <main id="main">
   <div class="hero relative">
-    <img
+    {{ unsplash.getFullUrl(hero.id)}}
+
+    <!-- <img
       src="{{ hero.url }}"
       style="max-height: 60vh; object-fit: cover; width: 100%;"
       alt=""
       loading="lazy"
-    />
+    /> -->
     <div class="meta absolute bottom-0 w-full pb-16 text-white">
       <div class="content-wrapper border-white border-l-4">
         <div class="date">

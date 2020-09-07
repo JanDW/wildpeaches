@@ -42,6 +42,7 @@
   },
   "homepage": "https://github.com/JanDW/wildpeaches#readme",
   "devDependencies": {
+    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@iktakahiro/markdown-it-katex": "^4.0.0",
@@ -49,6 +50,7 @@
     "clean-css-cli": "^4.3.0",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
     "http-server": "^0.12.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",

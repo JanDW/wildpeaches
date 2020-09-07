@@ -2,9 +2,8 @@
 title: How Deep Is That Pool?
 subtitle: The mathematics of COVID-19 testing
 author: John Peach
-date: 2020-08-07
 hero:
-    url: https://images.unsplash.com/photo-1596978759889-91e1a654faca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80
+    id: moHiHqdmUYY
 tags: [math, covid-19]
 ---
 

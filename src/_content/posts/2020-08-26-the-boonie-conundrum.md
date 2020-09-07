@@ -2,9 +2,9 @@
 title: The Boonie Conundrum
 subtitle: Monte Carlo simulation of a conspiracy
 author: John Peach
-tags: [math]
 hero:
-    url: https://images.unsplash.com/photo-1585747354995-bf346fd32d9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80
+    id: idRpmZVNs30 
+tags: [math]    
 keywords: [Monte Carlo simulation, conspiracies, Gompertz Survival Function]
 ---
 
