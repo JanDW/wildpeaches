@@ -1,16 +1,15 @@
 .post p,
 .post ul,
 .post ol,
-.post dl { 
- /* font-family: Georgia, serif; */
- @apply text-xl;
- max-width: 34em;
+.post dl {
+  /* font-family: Georgia, serif; */
+  @apply text-xl;
+  max-width: 34em;
 }
 
 .post > blockquote {
   @apply border-solid border-gray-700 border-l-4 px-5 py-2 my-10 bg-gray-300;
 }
-
 
 .post img {
   @apply my-16;
@@ -32,10 +31,9 @@
   @apply text-xl text-gray-900 font-medium pt-4 mb-2;
 }
 
-
-.post > ol, 
+.post > ol,
 .post > ul {
-  @apply my-5 list-inside;  
+  @apply my-5 list-inside;
 }
 
 .post > ol {
@@ -66,11 +64,12 @@
   @apply my-10;
 }
 
-.post  /*.katex-block */  .frac-line {
-  @apply text-current;
+.post .katex * {
+  border-color: currentColor;
 }
 
-.post :not(pre)>code[class*=language-], .post pre[class*=language-] {
+.post :not(pre) > code[class*="language-"],
+.post pre[class*="language-"] {
   @apply my-8;
 }
 
@@ -92,7 +91,7 @@
   display: block;
   height: 100%;
   width: 100%;
-  background-color: hsl(0,0%,0%,.2);
+  background-color: hsl(0, 0%, 0%, 0.2);
   position: absolute;
   z-index: 10;
 }
@@ -101,10 +100,54 @@
   z-index: 20;
 }
 
+.post > .author {
+  @apply mt-4 inline-block;
+}
+
 .meta > h1 {
   @apply text-2xl font-semibold;
 }
 
 .katex-block {
   @apply bg-gray-200 p-2;
+}
+.post-date__text {
+  display: inline-block;
+  color: #fff;
+  transform: skewX(10deg);
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.post table {
+  @apply bg-white;
+}
+
+.post thead > tr > th {
+  @apply py-4 px-2;
+}
+
+.post tbody > tr > th,
+.post tbody > tr > td {
+  @apply py-1 px-2;
+}
+
+.post tbody {
+  @apply font-mono;
+}
+
+.post tbody td,
+.post tbody th {
+  @apply py-2 border-b border-gray-300;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.w-max-900 {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
