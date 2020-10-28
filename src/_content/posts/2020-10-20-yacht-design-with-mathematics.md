@@ -104,7 +104,7 @@ Load an [image](https://wiki.geogebra.org/en/Image_Tool) by clicking on the icon
 Let's start by defining the sheer curve (the one labeled $s(x)$ backward).  The points "A" and "E" should be on the first and last points of the sheer curve.
 
 On the left side, you should have the points A-E defined, and the two image control points F and G, followed by a box marked "+ Input ...". In the Input box, you need to write the Bezier equation,
-$${curve}[x(A)(1-t)^4 + 4x(B)(1-t)^3*t + 6x(C)(1-t)^2*t^2\newline+ 4x(D)(1-t)*t^3 + x(E)t^4, y(A)(1-t)^4 + 4y(B)(1-t)^3*t \newline+ 6y(C)(1-t)^2*t^2 + 4y(D)(1-t)*t^3 + y(E)t^4,t,0,1]
+$$\text{curve}[x(A)(1-t)^4 + 4x(B)(1-t)^3*t + 6x(C)(1-t)^2*t^2\newline+ 4x(D)(1-t)*t^3 + x(E)t^4, y(A)(1-t)^4 + 4y(B)(1-t)^3*t\newline+ 6y(C)(1-t)^2*t^2 + 4y(D)(1-t)*t^3 + y(E)t^4,t,0,1]
 $$
 You really don't want to figure out what the equation for a 5-point Bezier curve is, so instead, run the [Octave](https://www.gnu.org/software/octave/) function `curveString(5)`  which will generate the Bezier function for 5 points. Copy and paste it into Geogebra. Right-click on the dot in the function box, choose "Settings" which will open a dialog box on the right side. Select "Color" and change the color to something which stands out from the other curves (maybe red).
 
