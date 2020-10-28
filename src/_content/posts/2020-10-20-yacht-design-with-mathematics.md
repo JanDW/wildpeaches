@@ -106,7 +106,7 @@ Let's start by defining the sheer curve (the one labeled $s(x)$ backward).  The 
 On the left side, you should have the points A-E defined, and the two image control points F and G, followed by a box marked "+ Input ...". In the Input box, you need to write the Bezier equation,
 $$\text{curve}[x(A)(1-t)^4 + 4x(B)(1-t)^3*t + 6x(C)(1-t)^2*t^2\newline+ 4x(D)(1-t)*t^3 + x(E)t^4, y(A)(1-t)^4 + 4y(B)(1-t)^3*t\newline+ 6y(C)(1-t)^2*t^2 + 4y(D)(1-t)*t^3 + y(E)t^4,t,0,1]
 $$
-You really don't want to figure out what the equation for a 5-point Bezier curve is, so instead, run the [Octave](https://www.gnu.org/software/octave/) function `curveString(5)`  which will generate the Bezier function for 5 points. Copy and paste it into Geogebra. Right-click on the dot in the function box, choose "Settings" which will open a dialog box on the right side. Select "Color" and change the color to something which stands out from the other curves (maybe red).
+You really don't want to figure out what the equation for a 5-point Bezier curve is, so instead, run the [Octave](https://www.gnu.org/software/octave/) `function curveString(5)`^[[Source code for curveString() on Github Gist](https://gist.github.com/XerxesZorgon/24713be3816c53cba0535371fbba2606)] which will generate the Bezier function for 5 points. Copy and paste it into Geogebra. Right-click on the dot in the function box, choose "Settings" which will open a dialog box on the right side. Select "Color" and change the color to something which stands out from the other curves (maybe red).
 
 ![Geogebra settings dialog](/assets/img/yacht-design-with-mathematics/geogebra-settings-and-dialog.svg){.mx-auto}
 
@@ -150,7 +150,7 @@ The homotopy function $A(x)$ is the least intuitive and won't show up in other d
 
 ## Generating functions
 
-After you have copied the control point data from each curve into the spreadsheet, save the spreadsheet to your local folder naming it something like "Letcher curves.xlsx". In [Octave](https://www.gnu.org/software/octave/index), open the function [BezierHull](https://gist.github.com/XerxesZorgon/c92272ec4dead2e19e4c7ab3eb2593b6) and run it from the command line,
+After you have copied the control point data from each curve into the spreadsheet, save the spreadsheet to your local folder naming it something like "Letcher curves.xlsx". In [Octave](https://www.gnu.org/software/octave/index), open the function `BezierHull`^[[Source code for BezierHull() on GitHub Gist](https://gist.github.com/XerxesZorgon/c92272ec4dead2e19e4c7ab3eb2593b6)] and run it from the command line,
 
 ```matlab
 >> BezStruct = BezierHull('Letcher curves.xlsx');
