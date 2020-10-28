@@ -8,12 +8,12 @@ bodyClass: text-gray-800 bg-gray-200
     <div class="title mt-48 mb-24 text-center">
       <h1>{{ title }}</h1>
       {% if subtitle %}
-      <p class="mt-0 text-xl">
+      <p class="mt-2 text-xl">
         {{ subtitle }}
       </p>
       {% endif %}
 
-      <p class="my-0 text-base text-gray-600">
+      <p class="mt-8 text-base text-gray-600">
         <time datetime="{{ page.date | w3DateFilter }}"
           >{{ page.date | dateFilter }}</time
         >
