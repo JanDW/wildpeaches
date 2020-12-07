@@ -6,7 +6,7 @@
 }
 
 .post img {
-  @apply my-16;
+  @apply my-8;
 }
 
 .post > p > code {

@@ -19428,6 +19428,22 @@ pre[class*=language-]{
   mix-blend-mode: multiply;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+  max-width: 55ch;
+}
+
+h1 {
+  text-align: center;
+}
+
 /* This file compiles to style.css */
 
 /* https://css-tricks.com/dark-modes-with-css/ */
@@ -19864,19 +19880,7 @@ dd {
 
 .full-width {
   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.content-wrapper {
-  max-width: 70ch;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  margin-left: calc(50% - 50vw);
 }
 
 .footnote-item {
@@ -19904,6 +19908,37 @@ h1 {
   text-indent: 0; /* no permlink markdown-it-anchor */
 }
 
+/* https://every-layout.dev/layouts/center/ */
+
+.center-l {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* https://every-layout.dev/layouts/stack/ */
+
+/*  */
+
+.stack-l {
+  --space: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack-l > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack-l > * + * {
+  margin-top: var(--space);
+}
+
 .post {
 }
 
@@ -19923,8 +19958,8 @@ h1 {
 }
 
 .post img {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .post > p > code {
@@ -38867,11 +38902,7 @@ h1 {
 
   .sm\:full-width {
     width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 
@@ -57675,11 +57706,7 @@ h1 {
 
   .md\:full-width {
     width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 
@@ -76483,11 +76510,7 @@ h1 {
 
   .lg\:full-width {
     width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 
@@ -95291,11 +95314,7 @@ h1 {
 
   .print\:full-width {
     width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 
