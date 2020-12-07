@@ -2,11 +2,11 @@
 }
 
 .post > blockquote {
-  @apply border-solid border-gray-700 border-l-4 px-5 py-2 my-10 bg-gray-300;
+  @apply border-solid border-gray-700 border-l-4 px-5 py-2 my-10 bg-gray-300 font-serif text-xl;
 }
 
 .post img {
-  @apply my-8;
+  @apply my-8 ml-auto mr-auto;
 }
 
 .post > p > code {
