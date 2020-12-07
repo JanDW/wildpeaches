@@ -1,5 +1,6 @@
 module.exports = {
   important: true,
+  purge: ['./www/**/*.html'],
   theme: {
     screens: {
       sm: '640px',
