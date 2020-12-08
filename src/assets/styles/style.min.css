@@ -1,15 +1,41 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
 /* Inter variable font import */
 
 /* https://rsms.me/inter/ */
 
-html, body { font-family: 'Inter', sans-serif;
+:root {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
-  html, body { font-family: 'Inter var', sans-serif;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote,
+  .font-inter {
+    font-family: "Inter var", sans-serif;
   }
+}
+
+/* Inter font */
+
+.home-font-features {
+  font-feature-settings: "ss01", "cv01", "cv11";
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -19813,12 +19839,6 @@ dd {
   line-height: 1.05;
 }
 
-/* Inter font */
-
-.home-font-features {
-  font-feature-settings: 'ss01', 'cv01', 'cv11';
-}
-
 /* VIEWPORT BASED WIDTHS */
 
 .w-vw-50 {
@@ -19896,7 +19916,7 @@ dd {
   display: inline;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
   text-indent: -1em; /* account for markdown-it-anchor permlink */
 }
 
@@ -19911,7 +19931,7 @@ h1 {
 /* https://every-layout.dev/layouts/center/ */
 
 .center-l {
-  max-width: 60ch;
+  max-width: 55ch;
   margin-left: auto;
   margin-right: auto;
   display: flex;
