@@ -2,6 +2,7 @@
 title: Of Sailing Ships, Velociraptors, and Walking on the Moon 
 subtitle: Catamaran Parameters in SMath Studio
 author: John Peach
+lede: How are boats, velociraptors, and walking on the Moon related? We'll find out by designing a catamaran and making a mistake. 
 tags: [math]
 keywords: [hull design, units]
 ---
@@ -16,10 +17,6 @@ keywords: [hull design, units]
 > And the name upon the contract, Isambard Brunel.
 >
 > —Ballad of the Great Eastern, by Sting
-
-
-
-How are boats, velociraptors, and walking on the Moon related? We'll find out by designing a catamaran and making a mistake. 
 
 ## The Great Eastern
 

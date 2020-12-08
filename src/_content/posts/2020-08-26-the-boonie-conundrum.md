@@ -2,12 +2,10 @@
 title: The Boonie Conundrum
 subtitle: Monte Carlo Simulation of a Conspiracy
 author: John Peach
+lede: This is the tale of the Great Boonie Conspiracy in which we show through the mathematics of the Gompertz Survival Function that all conspiracies must fail. It's the story of a coverup by people who didn't cover up and were exposed in the end.
 tags: [math]
 keywords: [Monte Carlo simulation, conspiracies, Gompertz Survival Function]
 ---
-
-This is the tale of the Great Boonie Conspiracy in which we show through the mathematics of the Gompertz Survival Function that all conspiracies must fail. It's the story of a coverup by people who didn't cover up and were exposed in the end.
-
 ## The Boonie story
 
 The high school is an imposing brick building with soaring white columns and a semi-circular drive enclosing an expansive lawn with tall shady oak trees. Go around to the back and you'll find the sports field where Boonie led the boys' soccer team. 

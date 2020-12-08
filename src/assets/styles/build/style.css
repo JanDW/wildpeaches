@@ -19621,20 +19621,53 @@ h3::before {
     @apply font-bold;
 } */
 
-.lede, .lead{
-  font-weight: 400 !important;
-  font-size: 1.25rem !important;
-  line-height: 1.75rem !important;
-  line-height: 1.375 !important;
-  --tw-text-opacity: 1 !important;
-  color: rgba(68, 64, 60, var(--tw-text-opacity)) !important;
+h2,
+h2,
+h3,
+h3,
+h4,
+h4,
+h5,
+h5,
+h6,
+h6,
+blockquote,
+blockquote,
+.lede,
+.lead {
+  font-family: "Inter", sans-serif;
 }
 
-@media (min-width: 1280px) {
-  .lede, .lead{
-    font-size: 1.5rem !important;
-    line-height: 2rem !important;
+@supports (font-variation-settings: normal){
+  h2,
+  h2,
+  h3,
+  h3,
+  h4,
+  h4,
+  h5,
+  h5,
+  h6,
+  h6,
+  blockquote,
+  blockquote,
+  .lede,
+  .lead {
+    font-family: "Inter var", sans-serif;
   }
+}
+
+.lede, .lead{
+  --tw-border-opacity: 1 !important;
+  border-color: rgba(214, 211, 209, var(--tw-border-opacity)) !important;
+  border-top-width: 1px !important;
+  border-bottom-width: 1px !important;
+  font-weight: 500 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  text-align: center !important;
 }
 
 /* .h-gamma {} */

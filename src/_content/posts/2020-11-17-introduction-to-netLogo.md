@@ -2,12 +2,10 @@
 title: Introduction to NetLogo 
 subtitle: Using Agent-Based Modeling to Study Emergent Systems
 author: John Peach
+lede: I'm going to introduce NetLogo and show you how to write a simple program that has a surprising outcome. I won't show the result, so you'll need to download the software and try it yourself.
 tags: [math]
 keywords: [Agent Based Model, Emergent Systems]
 ---
-
-I'm going to introduce NetLogo and show you how to write a simple program that has a surprising outcome. I won't show the result, so you'll need to download the software and try it yourself.
-
 ## NetLogo
 
 [NetLogo](https://ccl.northwestern.edu/netlogo/) is a simulation environment for multi-agent systems. Agents operate according to a set of rules within their environment. For example, the environment might be a grassy area where sheep can graze, and wolves attack and eat the sheep. Eating the sheep increases wolf energy allowing them to reproduce as does eating grass for the sheep. 
