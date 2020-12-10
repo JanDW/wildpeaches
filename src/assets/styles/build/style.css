@@ -19468,12 +19468,17 @@ figcaption {
   max-width: 55ch;
 }
 
+h1 {
   text-align: center;
 }
 
 table {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+pre {
+  overflow-x: scroll;
 }
 
 html,body {
@@ -19967,6 +19972,7 @@ h1 {
 
 .center-l {
   max-width: 55ch;
+  box-sizing: content-box;
   margin-right: auto;
   margin-left: auto;
   padding-left: 2rem;
