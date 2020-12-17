@@ -63,6 +63,7 @@
     "tailwindcss": "^2.0.1"
   },
   "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "http-server": "^0.12.3",
     "husky": "^4.3.4",
     "lint-staged": "^10.5.3",
