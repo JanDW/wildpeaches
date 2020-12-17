@@ -5,9 +5,9 @@ metadata:
   title: Wild Peaches
   subtitle: A Project Blog
   url: https://wildpeaches.xyz/
-  feedUrl: https://wildpeaches.xyz/feed.xml
+  feedUrl: /feed.xml
   author:
-    name: John Peach & Jan De Wilde
+    name: John Peach and Jan De Wilde
     email: hi@wildpeaches.xyz
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -25,13 +25,23 @@ metadata:
   {%- for post in collections.posts %} {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url)}}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title> 
-    {% if post.data.subtitle %}
-    <subtitle>{{ post.data.subtitle }}</subtitle>
-    {% endif%}
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <summary>{{ post.data.lede }}</summary>
+    <author>
+      <name>{{ post.data.author }}</name>
+    </author>
+    <summary>
+      {%- if post.data.subtitle %}
+      {{ post.data.subtitle }}
+      {% endif %}
+      {%- if post.data.subtitle and post.data.lede %}
+      —
+      {% endif %}
+      {%- if post.data.lede %}
+      {{ post.data.lede }}
+      {% endif %}
+    </summary>
   </entry>
   {%- endfor %}
 </feed>
