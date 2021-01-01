@@ -10,7 +10,9 @@ title: Wild Peaches
   >
     {% include 'global-nav.html' %} 
     {{ content | safe }}
-    {% include "subscription-form.html" %}
+    {% if includeSubscription %}
+      {% include "subscription-form.html" %}
+    {% endif%}
     {% include 'footer.html' %}
     {% include 'analytics.html' %}
   </body>
