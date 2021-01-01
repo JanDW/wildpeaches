@@ -49,6 +49,7 @@
     "clean-css-cli": "^4.3.0",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
     "markdown-it": "^12.0.2",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-attrs": "^3.0.3",
