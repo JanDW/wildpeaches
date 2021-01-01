@@ -444,3 +444,26 @@ dd {
 .panel {
   @apply bg-white border border-gray-200 rounded-lg;
 }
+
+.form--success {
+  @apply bg-green-200 text-green-700 font-inter;
+}
+
+.form--error {
+  @apply bg-red-200 text-red-700 font-inter;
+}
+
+@layer utilities {
+  .no-indent {
+    text-indent: 0;
+  }
+
+  /* Should be in TailwindCSS, but isn't showing up in the compiled code */
+  .border-transparent {
+    border-color: transparent;
+  }
+
+  .text-current {
+    color: currentColor;
+  }
+}
