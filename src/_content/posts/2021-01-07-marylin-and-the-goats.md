@@ -1,5 +1,4 @@
 ---
-
 title: Marylin and The Goats
 subtitle: Mathematicians fooled by probability, an R experiment to show why they're wrong
 author: John Peach
@@ -21,7 +20,8 @@ Marylin is very smart, maybe the smartest person in the world. She has written s
 
 In 1986, Parade Magazine published a profile of her, and it was so popular that they asked her to write a weekly column, [*Ask Marylin*](https://parade.com/tag/ask-marilyn/). The IQ test that made her famous was written by philosopher [Ronald K. Hoeflin](https://en.wikipedia.org/wiki/Ronald_K._Hoeflin), called the *Mega Test* designed to find people with one in a million IQs (99.9999th percentile), which admits them to the [Mega Society](https://en.wikipedia.org/wiki/Mega_Society). The test was first published in the April 1985 issue of [OMNI magazine](https://www.williamflew.com/omni79d.html), and a high score would also admit you into less intelligent groups such as the [Triple Nine Society (99.9%)](https://www.triplenine.org/WelcometoTNS.aspx), [The International Society of Philosophical Enquiry (99.96%)](https://www.thethousand.com), [The Prometheus Society (99.99%)](https://prometheussociety.org/wp/), and the [Titan Society (99.999%)](http://miyaguchi.4sigma.org/hoeflin/titan/titan.html). Pity the poor [Mensans](https://www.mensa.org/)  with IQs merely in the top 98th percentile.
 
-"*To acquire knowledge, one must study; but to acquire wisdom, one must observe.*" - Marylin vos Savant.
+"*To acquire knowledge, one must study; but to acquire wisdom, one must observe.*"
+  —Marylin vos Savant.
 
 ## The Goats
 
@@ -42,22 +42,22 @@ Should you stick with your original choice of Door #1, or switch to Door #2?
 In her column, Marylin said that you should always switch doors. Then the letters poured in 10,000 of them and 1,000 of those from Ph.D. statisticians and mathematicians. 
 
 > *You blew it, and you blew it big! Since you seem to have difficulty grasping the basic principle at work here, I’ll explain. After the host reveals a goat, you now have a one-in-two chance of being correct. Whether you change your selection or not, the odds are the same. There is enough mathematical illiteracy in this country, and we don’t need the world’s highest IQ propagating more. Shame!*
-> Scott Smith, Ph.D., University of Florida
+>—Scott Smith, Ph.D., University of Florida
 >
 > *I am sure you will receive many letters on this topic from high school and college students. Perhaps you should keep a few addresses for help with future columns.*
-> W. Robert Smith, Ph.D., Georgia State University
+>—W. Robert Smith, Ph.D., Georgia State University
 >
 > *You are utterly incorrect about the game show question, and I hope this controversy will call some public attention to the serious national crisis in mathematical education. If you can admit your error, you will have contributed constructively towards the solution of a deplorable situation. How many irate mathematicians are needed to get you to change your mind?*
-> E. Ray Bobo, Ph.D., Georgetown University
+>—E. Ray Bobo, Ph.D., Georgetown University
 >
 > *You made a mistake, but look at the positive side. If all those Ph.D.’s were wrong, the country would be in some very serious trouble.*
-> Everett Harman, Ph.D., U.S. Army Research Institute
+>—Everett Harman, Ph.D., U.S. Army Research Institute
 >
 > *May I suggest that you obtain and refer to a standard textbook on probability before you try to answer a question of this type again?*
-> Charles Reid, Ph.D., University of Florida
+>—Charles Reid, Ph.D., University of Florida
 >
 > *You are the goat!*
-> Glenn Calkins, Western State College
+> —Glenn Calkins, Western State College
 
 ## Goat Analysis
 
@@ -91,6 +91,8 @@ Another way to simulate the Monty Hall puzzle is with a pair of dice. You could 
 
 This is what I got after 52 rolls. There are 34 wins, meaning by switching I got the car 65% of the time.
 
+<div class="full-bleed my-16">
+
 | Car  | Chosen | Win   | Car  | Chosen | Win   | Car  | Chosen | Win   | Car  | Chosen | Win   |
 | ---- | ------ | ----- | ---- | ------ | ----- | ---- | ------ | ----- | ---- | ------ | ----- |
 | 3    | 2      | TRUE  | 3    | 3      | FALSE | 3    | 1      | TRUE  | 1    | 1      | FALSE |
@@ -107,6 +109,10 @@ This is what I got after 52 rolls. There are 34 wins, meaning by switching I got
 | 2    | 2      | FALSE | 3    | 2      | TRUE  | 3    | 3      | FALSE | 1    | 1      | FALSE |
 | 3    | 1      | TRUE  | 1    | 2      | TRUE  | 1    | 2      | TRUE  | 1    | 1      | FALSE |
 
+{.w-max-900}
+
+</div>
+
 ## The R Language
 
 For a much bigger simulation, you either need a lot of patience or to write some code. While this could be done in almost any language, this is a good opportunity to experiment with the R language. John Chambers, Rick Becker, and Allan Wilks developed a statistical language they called S while working at Bell Labs. R is derived from S and used by statisticians because of its many specialized statistical functions. 
@@ -121,7 +127,7 @@ The `sample(x, size, replace)` function in R is equivalent to rolling dice. The 
 
 The [program](https://gist.github.com/XerxesZorgon/d8d9f93c9bd55170fb4f95d5887e89ba) for simulating the Monty Hall problem is pretty simple. Initialize a `wins` counter, roll a pair of dice with the `sample` function `n` times, and if the numbers that come up are not equal, add $1$ to `wins`. Finally, divide the number of wins by the number of iterations to get the probability of winning.
 
-```R
+```r
 montyhall <- function(n)
 {
   # Win counter
@@ -147,17 +153,24 @@ montyhall <- function(n)
 
 R uses `<-` as the assignment operator, so initializing `wins` to zero is done by `wins <- 0`. Rolling the dice puts a $1 \times 2$ vector into `s` which you can see at the command line by 
 
-`> s <- sample(3,2,replace = TRUE); print(s)
-[1] 1 2`
+```r
+> s <- sample(3,2,replace = TRUE); print(s)
+[1] 1 2
+```
+
 
 and if the elements of `s` aren't equal then `wins` is incremented by $1$. The probability of winning the car is approximated by the ratio of the number of wins to the number of games played,
 
-`p <- wins/n`.
+```r
+p <- wins/n
+```
 
 After you've written the function, click the "Source" button in the upper right corner of the code pane. This will import the function into the command window and let you run experiments. This is what I got from one sample,
 
-`> montyhall(10000)
-[1] 0.6626`
+```r
+> montyhall(10000)
+[1] 0.6626
+```
 
 which is just about the $2/3$ expected. 
 
