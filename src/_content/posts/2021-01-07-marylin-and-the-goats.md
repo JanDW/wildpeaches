@@ -3,6 +3,9 @@ title: Marylin and The Goats
 subtitle: Mathematicians fooled by probability, an R experiment to show why they're wrong
 author: John Peach
 lede: Controversial Ask Marylin column about the Monty Hall problem solved. 
+hero:
+ url: /assets/img/marylin-and-the-goats/men-who-stare-at-goats.jpg
+ alt: Still from The Men Who Stare at Goats (movie).
 tags: [math]
 keywords: [probability, simulation, R language]
 ---
