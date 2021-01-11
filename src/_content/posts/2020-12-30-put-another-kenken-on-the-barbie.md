@@ -5,6 +5,7 @@ lede: If you like Sudoku, you'll love KenKen!
 author: John Peach
 tags: [math]
 keywords: [KenKen, Pari/GP, Integer Partitions, Number theory]
+socialImg: /assets/img/put-another-kenken-on-the-barbie/tetsuya-miyamoto.svg
 ---
 ## Tetsuya Miyamoto
 
