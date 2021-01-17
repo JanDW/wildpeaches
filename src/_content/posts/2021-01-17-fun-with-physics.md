@@ -9,7 +9,7 @@ keywords: [physics, simulation, Algodoo, HeuristicLab, Octave]
 
 Have you always wanted to be a real physicist like Sheldon Cooper, but didn't want to spend a lot of time studying? Here's how you can move to the head of the class without cracking open a single textbook.
 
-![Sheldon](/assets/img/fun-with-physics/Sheldon.png)
+![sheldon](/assets/img/fun-with-physics/sheldon.png)
 
 ## The Most Famous Equation
 
@@ -19,11 +19,11 @@ E = mc^2.
 $$
 It's only got three letters, and the most complicated part is $c^2$. Plot the equation and you'll see that it's just a straight line:
 
-<img src="/assets/img/fun-with-physics/emc.jpg" alt="emc" style="zoom:50%;" />
+![E=mc^2](/assets/img/fun-with-physics/emc.jpg){.blend-multiply}
 
 Other than realizing that energy is related to mass through the speed of light squared, you really phoned that one in, didn't ya Al?
 
-<img src="/assets/img/fun-with-physics/Einstein.jpg" alt="Einstein" style="zoom:50%;" />
+![Albert Einstein.](/assets/img/fun-with-physics/einstein.jpg)
 
 Usually, scientists don't just think up the correct equation out of thin air. They collect data, test hypotheses, and fit equations to the data. 
 
@@ -39,7 +39,7 @@ On the right end of the control panel you'll see three buttons. These buttons co
 
 I thought that a good first experiment would be to collect data for a falling ball, first without drag and then with atmospheric drag turned on. I created a circle (ball), dragged it up to $48 \; m$, and checked the physical properties by right-clicking the ball, and then clicking "Information":
 
-<img src="/assets/img/fun-with-physics/ball-no-atmos-info.png" alt="ball-no-atmos-info" style="zoom:75%;" />
+![](/assets/img/fun-with-physics/ball-no-atmos-info.png)
 
 Notice that the drag has been turned off, but the grid is visible. Close the information window, and click on "Show plot" and run the simulation until the ball reaches the ground. It will bounce a few times, but you can stop it anytime after the first bounce.
 
@@ -51,11 +51,11 @@ y(t) = y_0 + v_yt - \frac{1}{2}gt^2
 $$
 where $y(t)$ is the height at time $t$, $y_0 = 48 \; m$ is the initial height, $v_y = 0 \frac{m}{s}$ is the initial velocity and $g = 9.80665 \frac{m}{s^2}$ is the standard acceleration due to gravity. Here's a plot generated in [Octave](https://www.gnu.org/software/octave/index) of the data collected by Algodoo and the fitted positions:
 
-<img src="/assets/img/fun-with-physics/falling-ball.png" alt="falling-ball" style="zoom: 50%;" />
+![](/assets/img/fun-with-physics/falling-ball.png){.blend-multiply}
 
 Something's wrong! Drag is turned off, so that's not it. Does Algodoo use a different gravitational acceleration constant? In the upper right corner of Algodoo, you'll see a small box with three icons. The lowest one looks like a magnifying glass, and if you click on that, a dialog box will appear showing Forces, Velocities, and Momentums:
 
-<img src="/assets/img/fun-with-physics/force-visualization.png" alt="force-visualization" style="zoom:75%;" />
+![](/assets/img/fun-with-physics/force-visualization.png)
 
 Since force = mass $\times$ acceleration ($F=ma$), we see that $mg = 0.62 \; N$ and the mass is $0.063 \; kg$ so acceleration is 
 $$
@@ -70,7 +70,7 @@ $$
 y(t) = y_0 + v_yt - \frac{1}{2}gt^2.
 $$
 
-```octave
+```matlab
 >> c0 = polyfit(t,y,2)
 c0 =
 
@@ -89,7 +89,7 @@ Symbolic regression is a method that finds the best fitting function to a datase
 
 Computers store functions as expression trees where operators act on constants or variables, with the highest precedence operations taking place at the leaves of the tree and the lowest precedence taking place at the top. That sounds like gibberish, so let's take a look at the gravity function as an expression tree.
 
-<img src="/assets/img/fun-with-physics/gravity-tree-expression.png" alt="gravity-tree-expression" style="zoom:50%;" />
+![](/assets/img/fun-with-physics/gravity-tree-expression.png){.blend-multiply}
 
 In the bottom right is $t \times t$ giving $t^2$, and next to that is the constant $\frac{1}{2}$ multiplied by the gravitational constant $g$. To the left, $v_y$ and $t$ are multiplied together to get the middle term. The acceleration term is subtracted from the velocity term using the minus operator, and finally, the initial position $y_0$ is added to complete the equation. 
 
@@ -97,11 +97,11 @@ The way symbolic regression works is that the program generates hundreds of rand
 
 The genetic algorithm chooses another equation to "mate" with the one shown above. It snips the "DNA" and swaps segments between the two expression trees.
 
-<img src="/assets/img/fun-with-physics/parent-generation.png" alt="parent-generation" style="zoom:50%;" />
+![](/assets/img/fun-with-physics/parent-generation.png){.blend-multiply}
 
 After swapping, the two new offspring equations are:
 
-<img src="/assets/img/fun-with-physics/offspring-generation.png" alt="offspring-generation" style="zoom:50%;" />
+![](/assets/img/fun-with-physics/offspring-generation.png){.blend-multiply}
 
 The two new equations are evaluated at each $t_i$ and compared to the data $y_i$ to see how well they fit. The algorithm might start with 1000 equations and generate another 1000 using this method. Each of the 2000 equations is evaluated at all times, and the top 1000 are kept for the next iteration. Amazingly, after a few hundred generations a good solution will often emerge. 
 
@@ -117,25 +117,25 @@ Writing a program to convert equations into tree expressions, and then handling 
 
 Open the data files generated by Algodoo and find the last row before the ball bounces. Delete all of the data below the bounce and save the file. Start HeuristicLab, select and start the Optimizer, and double click "Genetic Programming – Symbolic Regression". When the new tab opens click the file icon and select the data file. Change the target variable to "Position". For now, leave the Training/Test slider at 66%/34%.
 
-<img src="/assets/img/fun-with-physics/heuristiclab-start-load.png" alt="heuristiclab-start-load" style="zoom:50%;" />
+![](/assets/img/fun-with-physics/heuristiclab-start-load.png)
 
 The default tree depth is 12, but this usually makes the fitted expression overly complicated. Try setting it to 6 to see if you can get a good fit. You can also change the tree grammar, that is, the operators available to the algorithm. Under the "Algorithm" tab, change the maximum number of generations and the population size, if you like.
 
-<img src="/assets/img/fun-with-physics/heuristiclab-tree-depth-population-parameters.png" alt="heuristiclab-tree-depth-population-parameters" style="zoom:50%;" />
+![](/assets/img/fun-with-physics/heuristiclab-tree-depth-population-parameters.png)
 
 To start the symbolic regression, click on the green "Run" arrow in the bottom left corner. Switch to the "Results" tab, and select "Qualities" to watch the algorithm at work.
 
-![heuristiclab-run-qualities](/assets/img/fun-with-physics/heuristiclab-run-qualities.png)
+![](/assets/img/fun-with-physics/heuristiclab-run-qualities.png)
 
 When the run has finished, click "Best Training Solution: SymbolicRegression" in the "Results" tab, and then double click "Model: Symbolic Regression Model". 
 
-<img src="/assets/img/fun-with-physics/heuristiclab-model-scatterplot.png" alt="heuristiclab-model-scatterplot" style="zoom: 80%;" />
+![](/assets/img/fun-with-physics/heuristiclab-model-scatterplot.png)
 
 Click on "Test Samples" in the scatter plot to show the fit to both training and test data. You can simplify the model and optimize the parameters at this point. Watch the scatter plot as you make changes. If the scatter plot begins to deviate from the true values, you can undo simplifications.
 
 HeuristicLab found this equation to best fit the data (right-click on the format icon for options):
 
-<img src="/assets/img/fun-with-physics/heuristicLab-solution.png" alt="heuristicLab-solution" style="zoom: 50%;" />
+![](/assets/img/fun-with-physics/heuristicLab-solution.png)
 
 It's a very good fit, $R^2 = 0.99997458780501536$ on the test data, and probably would have been even better except that one test data point seems to be off the fit line. On the other hand, it's a very complex model for something that should have been much simpler. Reducing the tree depth would help, and since the population equations are chosen randomly, new runs produce different equations. 
 
