@@ -33,7 +33,7 @@ module.exports = (eleventyConfig) => {
     });
 
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget("./_tmp/style.css");
+  eleventyConfig.addWatchTarget("src/assets/styles");
 
   // Use markdownIt with markdownItAttrs for markdown parsing
   // Allows for classes and id's to be applied in markdown without
@@ -47,17 +47,17 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("src/assets/styles/style.min.css");
   eleventyConfig.addPassthroughCopy({ "src/assets/siteroot": "/" });
 
-  //Plugins
+  // Plugins
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
 
   // Shortcodes
-  eleventyConfig.addNunjucksShortcode(
+  eleventyConfig.addShortcode(
     "pullquote",
     require("./lib/shortcodes/pullquote.js")
   );
 
-  eleventyConfig.addPairedNunjucksShortcode("letter", function (contents) {
+  eleventyConfig.addPairedShortcode("letter", function (contents) {
     const parsedMarkDown = markdownLib.render(contents);
     const html = `
     <div id="letter" class="lg:letter my-12 py-12 text-lg">
@@ -66,11 +66,21 @@ module.exports = (eleventyConfig) => {
     return html.replace(/(\r\n|\n|\r)(\s\s)*/gm, "");
   });
 
-  // Add Filters
+  eleventyConfig.addPairedShortcode("table", function (contents) {
+    const parsedMarkDown = markdownLib.render(contents);
+    const html = `
+    <div class="table-wrapper full-bleed my-16">
+      <div class="w-max-900">
+      ${parsedMarkDown}
+      </div>
+    </div>`;
+    return html.replace(/(\r\n|\n|\r)(\s\s)*/gm, "");
+  });
+
+  // Filters
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
-
   eleventyConfig.addFilter("dateFilter", dateFilter);
   eleventyConfig.addFilter("w3DateFilter", w3DateFilter);
   eleventyConfig.addFilter("dump", dumpFilter);

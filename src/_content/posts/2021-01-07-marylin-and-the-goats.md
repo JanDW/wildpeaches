@@ -115,7 +115,7 @@ Another way to simulate the Monty Hall puzzle is with a pair of dice. You could 
 
 This is what I got after 52 rolls. There are 34 wins, meaning by switching I got the car 65% of the time.
 
-<div class="table-wrapper full-bleed my-16">
+{% table %}
 
 | Car  | Chosen | Win   | Car  | Chosen | Win   | Car  | Chosen | Win   | Car  | Chosen | Win   |
 | ---- | ------ | ----- | ---- | ------ | ----- | ---- | ------ | ----- | ---- | ------ | ----- |
@@ -133,9 +133,7 @@ This is what I got after 52 rolls. There are 34 wins, meaning by switching I got
 | 2    | 2      | FALSE | 3    | 2      | TRUE  | 3    | 3      | FALSE | 1    | 1      | FALSE |
 | 3    | 1      | TRUE  | 1    | 2      | TRUE  | 1    | 2      | TRUE  | 1    | 1      | FALSE |
 
-{.w-max-900}
-
-</div>
+{% endtable %}
 
 ## The R Language
 
