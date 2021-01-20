@@ -51,7 +51,7 @@ Should you stick with your original choice of Door #1, or switch to Door #2?
 
 In her column, Marylin said that you should always switch doors. Then the letters poured in 10,000 of them and 1,000 of those from Ph.D. statisticians and mathematicians. 
 
-<div id="letters" class="lg:letter my-12 py-12 text-lg">
+{%- letter %}
 
 *You blew it, and you blew it big! Since you seem to have difficulty grasping the basic principle at work here, I’ll explain. After the host reveals a goat, you now have a one-in-two chance of being correct. Whether you change your selection or not, the odds are the same. There is enough mathematical illiteracy in this country, and we don’t need the world’s highest IQ propagating more. Shame!*
 —Scott Smith, Ph.D., University of Florida
@@ -81,7 +81,7 @@ In her column, Marylin said that you should always switch doors. Then the letter
 *You are the goat!*
 —Glenn Calkins, Western State College
 
-</div>
+{% endletter %}
 
 ## Goat Analysis
 

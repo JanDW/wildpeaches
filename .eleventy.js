@@ -57,6 +57,15 @@ module.exports = (eleventyConfig) => {
     require("./lib/shortcodes/pullquote.js")
   );
 
+  eleventyConfig.addPairedNunjucksShortcode("letter", function (contents) {
+    const parsedMarkDown = markdownLib.render(contents);
+    const html = `
+    <div id="letter" class="lg:letter my-12 py-12 text-lg">
+      ${parsedMarkDown}
+    </div>`;
+    return html.replace(/(\r\n|\n|\r)(\s\s)*/gm, "");
+  });
+
   // Add Filters
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
