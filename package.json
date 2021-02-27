@@ -24,7 +24,8 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,json,css,md}": "prettier --write"
+    "**/*.{js,json,css,md,yml,yaml}": "prettier --write",
+    "**/*.js": "eslint --cache --fix"
   },
   "keywords": [],
   "author": "Jan De Wilde",
