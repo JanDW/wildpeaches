@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  //prefix: 't-', /* BEM utility scoping */
+  // prefix: 't-', /* BEM utility scoping */
   important: true,
   darkMode: 'media',
   purge: ['./.eleventy.js', './src/**/*.html', './src/**/*.md', './src/**/*.json', './lib/shortcodes/**/*.js'],
