@@ -1,7 +1,6 @@
 *,
 *::before,
 *::after {
-  
 }
 
 html {
@@ -31,8 +30,8 @@ table {
   @apply text-base w-full;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   @apply text-base;
 }
 

@@ -1,21 +1,15 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   //prefix: 't-', /* BEM utility scoping */
   important: true,
   darkMode: 'media',
-  purge: [
-    './.eleventy.js',
-    './src/**/*.html',
-    './src/**/*.md',
-    './src/**/*.json',
-    './lib/shortcodes/**/*.js',
-  ],
+  purge: ['./.eleventy.js', './src/**/*.html', './src/**/*.md', './src/**/*.json', './lib/shortcodes/**/*.js'],
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       serif: [''],
-      mono: ['']
+      mono: [''],
     },
     screens: {
       // media query ems are based on browser setting font size value, NOT :root/html
@@ -51,4 +45,4 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [],
-}
+};

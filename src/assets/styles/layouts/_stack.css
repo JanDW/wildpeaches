@@ -1,7 +1,6 @@
 /* https://every-layout.dev/layouts/stack/ */
 /*  */
 
-
 .stack-l {
   --space: 1.25rem;
   display: flex;
@@ -12,7 +11,7 @@
 .stack-l > * {
   margin-top: 0;
   margin-bottom: 0;
-} 
+}
 
 .stack-l > * + * {
   margin-top: var(--space);
