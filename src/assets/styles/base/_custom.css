@@ -1,196 +1,11 @@
-/* This file compiles to style.css */
-
-/* https://css-tricks.com/dark-modes-with-css/ */
-
-html,body {height: 100%;}
-
-body {
-  color: #544;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-}
-
-main {
-  min-height: 100%;
-}
-
-p {
-  @apply mb-5;
-}
-
-ul,
-ol {
-  @apply list-inside my-0;
-}
-
-ul {
-  @apply list-disc;
-}
-
-ol {
-  @apply list-decimal;
-}
-/* 
-ol li,
-ul li {
-  @apply mb-3;
-} */
-
-
-/* .list {
-  padding-left: 0;
-  list-style-position: inside;
-}
-
-.list li {
-  @apply pb-1;
-} */
-
-li > ul,
-li > ol {
-  @apply my-4 mx-8;
-}
-
-
-.list-arrow {
-  list-style-type: '\2794\0020';
-}
-
-
-
-::selection {
-  color: #066;
-  background-color: #0ee;
-  caret-color: black;
-}
-
-.avatar {
-  /* float: left; */
-  min-width: 100%;
-
-  background-color: navy;
-}
-
-.avatar img {
-  transform: translate(calc(50% - 75px), 25%);
-
-  border: 5px solid #fff;
-  border-radius: 50%;
-
-  shape-outside: circle(50%);
-}
-
-/* HEADINGS /
-
-/* .h-alpha {} */
-
-/* .h1 {
-  font-family: utopia-std-headline, serif;
-  font-size: 3.6rem;
-  font-weight: 800;
-  line-height: 1.1;
-
-  color: #213079;
-
-  letter-spacing: -0.025em;
-}
-
-.h1::after {
-  display: block;
-
-  width: 50px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-
-  content: '';
-
-  border-bottom: 5px solid #e56741;
-} */
-
-.h-beta {
-  /* color:#E7900F; */
-  /* color:#ff6300; */
-  color: #357edd;
-}
-
-.avatar--translate {
-  transform: translate(0, -50px);
-}
-
-
-/* h3, .h3 {
-    @apply font-bold;
-    @apply text-xl;
-    @apply text-blue-700;
-    margin-top: 32px;
-    margin-bottom: 19px;
-}
-
-h3::before {
-    @apply block;
-    content: "";
-    width: 24px;
-    height: 4px;
-    margin-bottom: 10px;
-    @apply bg-blue-300;
-}     */
-
-/* h3 {
-    @apply font-bold;
-} */
-
-.lede,
-.lead {
-  @apply text-lg font-medium font-inter border-t border-b border-gray-300 py-4;
-}
-
-
-/* .h-gamma {} */
-
-/* SPACING */
-
-.mt-10vh {
-  margin-top: 10vh;
-}
-
-.w-line {
-  /* max-width: 70ch; */
-  max-width: 50em;
-}
-
-.text-secondary {
-  color: #607d8b;
-}
-
-.well {
-  height: 240px;
-  margin-right: -2rem;
-  margin-left: -2rem;
-  padding: 1rem;
-
-  background-color: #ede6d7;
-}
-
 a:link {
   border-bottom-color: transparent;
   border-bottom-width: 2px;
-} 
+}
 
 a:hover {
   border-bottom-color: currentColor;
 }
-
-.post a:link {
-  @apply border-gray-400 border-b-2;
-}
-
-.post a:hover {
-  @apply border-gray-600;
-}
-
-
-
-
 
 /**`
 /* This is supposed to be included in TailwindCSS
@@ -240,71 +55,21 @@ a:hover {
   }
 }
 
-@media (min-width: 1024px) {
-  .lg\:letter {
-    padding: 5rem 5rem 10rem;
+/* GLITCH */
 
-    border-top: 2px solid #fff;
-    border-left: 1px solid #fff;
-    background-color: #fcfbf9;
-    transform: rotate(-1deg);
-    box-shadow: 0 4px 6px hsla(172, 6%, 50%, 0.1),
-      0 5px 150px hsla(172, 16%, 81%, 0.1);
-  }
-
-  .lg\:bg-letter {
-    /* background-color:*/
-    background: #e8f0f3 url(/assets/img/divider-tan-bottom.svg) center bottom -0.3rem/105%
-      no-repeat;
-  }
-
-  /* GLITCH */
-
-  /* .lg\:letter.glitch {
+/* .lg\:letter.glitch {
     box-shadow: #fe767c 0rem 0rem 0px 0.3rem, #fff 0.9rem -0.9rem 0px 0rem,
       #b98bfd 0.9rem -0.9rem 0px 0.3rem, #fff 1.8rem -1.8rem 0px 0rem,
       #7179f9 1.8rem -1.8rem 0px 0.3rem;
     border-radius: 3em;
   } */
 
-  .glitch {
-    background-color: #F8FAFC !important;
-  }
+.glitch {
+  background-color: #f8fafc !important;
+}
 
-  .glitch nav {
-    background-color: #EAF0F3 !important;
-  }
-
-
-  .lg\:letter.letter--glitch {
-    box-shadow: #fe767c 0rem 0rem 0px 0.3rem, #f5bdf3 0.9rem -0.9rem 0px 0rem,
-      #a36af7 0.9rem -0.9rem 0px 0.3rem, #cacdfd 1.8rem -1.8rem 0px 0rem,
-      #7179f9 1.8rem -1.8rem 0px 0.3rem;
-    background-color: #f9e5de;
-    color: #712124;
-    border: 0;
-  }
-
-  .lg\:letter.glitch p:first-of-type {
-    background-color: #87fece;
-    width: fit-content;
-    height: 3em;
-    content: '';
-    padding: 0 2em;
-    transform: rotate(-1deg);
-    border-radius: 0.25em;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 5rem;
-  }
-
-  .lg\:letter.glitch p:first-of-type span {
-    transform: rotate(1deg);
-  }
-
-  /* .bg-white-90 {
-    background-color: hsla(360, 100%, 100%, 0.9);
-  } */
+.glitch nav {
+  background-color: #eaf0f3 !important;
 }
 
 .bg-bubbles {
@@ -377,10 +142,9 @@ dd {
   line-height: 1.05;
 }
 
-
 /* VIEWPORT BASED WIDTHS */
 
-@responsive{
+@responsive {
   .w-vw-50 {
     width: 50vw;
   }
@@ -388,7 +152,7 @@ dd {
   .w-vw-55 {
     width: 55vw;
   }
-  
+
   .w-vw-60 {
     width: 60vw;
   }
@@ -412,17 +176,17 @@ dd {
   .w-vw-85 {
     width: 85vw;
   }
-  
+
   .w-vw-90 {
     width: 90vw;
   }
-  
+
   .w-vw-95 {
     width: 95vw;
   }
 }
 
-@responsive{
+@responsive {
   .px-vw-3 {
     padding-left: 3vw;
     padding-right: 3vw;

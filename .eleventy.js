@@ -61,7 +61,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPairedShortcode("letter", function (contents) {
     const parsedMarkDown = markdownLib.render(contents);
     const html = `
-    <div id="letter" class="lg:letter my-12 py-12 text-lg">
+    <div id="letter" class="md:letter">
       ${parsedMarkDown}
     </div>`;
     return html.replace(/(\r\n|\n|\r)(\s\s)*/gm, "");
