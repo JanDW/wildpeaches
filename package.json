@@ -16,16 +16,15 @@
     "serve": "npm run css:build-dev && npx @11ty/eleventy --serve",
     "md:lint": "markdownlint src/**/*.md",
     "rm:www": "rm -rf www/",
-    "test": "echo \"testing once more jan\""
+    "test": "echo \"what the fuck\""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "**/*.{js,json,css,md}": "prettier --write",
-    "**/*.{js,json,css}": "prettier --write"
+    "**/*.{js,json,css,md}": "prettier --write"
   },
   "keywords": [],
   "author": "Jan De Wilde",
