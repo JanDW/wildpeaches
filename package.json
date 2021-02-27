@@ -17,22 +17,6 @@
     "md:lint": "markdownlint src/**/*.md",
     "rm:www": "rm -rf www/"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{html,js,json}": [
-      "prettier --write",
-      "git add -A"
-    ],
-    "styles/**/*.css": [
-      "csscomb --tty-mode --",
-      "git add -A"
-    ],
-    "*.{js,css,md}": "prettier --write"
-  },
   "keywords": [],
   "author": "Jan De Wilde",
   "license": "",
@@ -74,5 +58,14 @@
     "lint-staged": "^10.5.4",
     "markdownlint-cli": "^0.26.0",
     "prettier": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": "prettier --write",
+    "*.{js,css,md}": "prettier --write"
   }
 }
