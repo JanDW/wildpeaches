@@ -15,7 +15,8 @@
     "start": "npm run css:build-prod && npx @11ty/eleventy",
     "serve": "npm run css:build-dev && npx @11ty/eleventy --serve",
     "md:lint": "markdownlint src/**/*.md",
-    "rm:www": "rm -rf www/"
+    "rm:www": "rm -rf www/",
+    "test": "echo \"testing again.. jan\""
   },
   "keywords": [],
   "author": "Jan De Wilde",
@@ -61,11 +62,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm test"
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": "prettier --write",
-    "*.{js,css,md}": "prettier --write"
+    "**/*.{js,json,css,md}": "prettier --write",
+    "**/*.{js,json,css}": "prettier --write"
   }
 }
