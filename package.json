@@ -66,6 +66,8 @@
     "postcss-custom-selectors": "^6.0.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-extend-rule": "^3.0.0",
+    "postcss-logical": "^4.0.2",
+    "postcss-media-minmax": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.0.3"
   },
