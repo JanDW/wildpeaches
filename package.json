@@ -23,11 +23,7 @@
     }
   },
   "lint-staged": {
-    "*.{html,json}": [
-      "prettier --write",
-      "git add -A"
-    ],
-    "scripts/**/*.{js,json}": [
+    "*.{html,js,json}": [
       "prettier --write",
       "git add -A"
     ],
