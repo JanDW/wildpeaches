@@ -12,9 +12,9 @@ a:hover {
 /* but no luck? @TODO
 */
 
-.border-current {
+/* .border-current {
   border-color: currentColor !important;
-}
+} */
 
 /* .global-footer {
   background-image: url(/assets/img/waving.svg);
@@ -218,11 +218,11 @@ dd {
 }
 
 .form--success {
-  @apply bg-green-200 text-green-700 font-inter;
+  @apply bg-green-200 text-green-700 font-sans;
 }
 
 .form--error {
-  @apply bg-red-200 text-red-700 font-inter;
+  @apply bg-red-200 text-red-700 font-sans;
 }
 
 @layer utilities {

@@ -12,9 +12,8 @@ h3,
 h4,
 h5,
 h6,
-blockquote,
-.font-inter {
-  font-family: 'Inter', sans-serif;
+blockquote {
+  @apply font-sans;
 }
 
 @supports (font-variation-settings: normal) {
@@ -24,7 +23,7 @@ blockquote,
   h5,
   h6,
   blockquote,
-  .font-inter {
+  .font-sans {
     font-family: 'Inter var', sans-serif;
   }
 }
