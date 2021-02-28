@@ -60,7 +60,7 @@
 } */
 
 .s-post > .katex-block {
-  @apply my-10 py-1 overscroll-x-auto;
+  @apply my-10 py-1 overflow-x-auto;
 }
 
 .s-post .katex * {

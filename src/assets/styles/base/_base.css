@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  @apply text-base overflow-x-hidden flex flex-col min-h-screen m-0 p-0 font-serif;
+  @apply text-base overflow-x-hidden min-h-screen m-0 p-0 font-serif;
   text-rendering: optimizeSpeed;
 }
 
@@ -37,5 +37,5 @@ pre[class*='language-'] {
 
 pre,
 .table-wrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
