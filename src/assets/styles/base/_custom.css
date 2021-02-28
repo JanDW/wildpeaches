@@ -8,18 +8,10 @@ a:hover {
 }
 
 @responsive {
-  .full-width {
+  .full-bleed {
     width: 100vw;
     margin-left: calc(50% - 50vw);
   }
-}
-
-.footnote-item {
-  @apply text-gray-700 text-base my-2;
-}
-
-.footnote-item p {
-  display: inline;
 }
 
 .panel {
@@ -37,5 +29,9 @@ a:hover {
 @layer utilities {
   .u-no-indent {
     text-indent: 0;
+  }
+  /* @TODO Not present in TailwindCSS though it should be? */
+  .u-border-current {
+    border-color: current;
   }
 }
