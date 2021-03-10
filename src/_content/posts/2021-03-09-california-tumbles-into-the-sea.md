@@ -189,7 +189,7 @@ meshVol = volUnderRect(mesh,[0;0],[180;22])
 
 to get the volume of the washout under the road. Imagine that you're placing a rectangle over the damaged section of the road where the lower left coordinate is $(0,0)$ and the upper right is $(180,22)$, using a distance down the road of $180$ feet and the road width of $22$ feet. The function `volUnderRect` calls `triInRect` as a sub-function, so you don't need to directly find the triangles in the mesh contained within the rectangle.
 
-![road-rectangle](/assets/img/california-tumbles-into-the-sea/road-rectangle.png)
+![road-rectangle](/assets/img/california-tumbles-into-the-sea/road-rectangle.jpg)
 
 You can plot a cross-section of the mesh between two points using the function `meshCrossSect`. The cross-section provides a handy way to check the volume estimate.
 
