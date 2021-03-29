@@ -13,23 +13,23 @@ socialImg: /assets/img/havens-haven/havens-hardy-ramanujan.jpg
 
 ## Christopher Havens
 
-If you were facing a 25 year stretch for murder and had landed in solitary for a while, you might think to yourself, "Maybe this would be a good time to catch up on some number theory". Something like this occurred to Christopher Havens when he was convicted of [murdering Randen Robinson]([Two suspected of murdering man found in Capitol State Forest | The Olympian](https://www.theolympian.com/news/local/crime/article25250860.html)) and sent to the Washington State [Monroe Correctional Complex northeast of Seattle]([How a convicted killer's passion for math inspired him to change his life — and others' | CBC Radio](https://www.cbc.ca/radio/thecurrent/the-current-for-oct-15-2020-1.5763055/how-a-convicted-killer-s-passion-for-math-inspired-him-to-change-his-life-and-others-1.5753905)). He had dropped out of high school, began using drugs, and killed Robinson during a drug-related dispute. After his conviction, bad behavior sent him to solitary confinement for a year.
+If you were facing a 25 year stretch for murder and had landed in solitary for a while, you might think to yourself, "Maybe this would be a good time to catch up on some number theory". Something like this occurred to Christopher Havens when he was convicted of [murdering Randen Robinson](https://www.theolympian.com/news/local/crime/article25250860.html) and sent to the Washington State [Monroe Correctional Complex northeast of Seattle](https://www.cbc.ca/radio/thecurrent/the-current-for-oct-15-2020-1.5763055/how-a-convicted-killer-s-passion-for-math-inspired-him-to-change-his-life-and-others-1.5753905). He had dropped out of high school, began using drugs, and killed Robinson during a drug-related dispute. After his conviction, bad behavior sent him to solitary confinement for a year.
 
 While in solitary, Havens started working puzzles and then realized that the guards were handing out math problems to other prisoners. He did as much math as they could provide, quickly learning calculus and number theory, but eventually exceeded the guards' ability to keep up with his level.
 
 ![chris-havens](/assets/img/havens-haven/chris-havens.jpg)
 
-That's when he sent this letter that eventually arrived on the desk of Matthew Cargo, editor for [Mathematical Sciences Publishers](https://msp.org/), whose partner [Marta Cerruti]([An inmate's love for math leads to new discoveries (theconversation.com)](https://theconversation.com/an-inmates-love-for-math-leads-to-new-discoveries-130123)) is Associate Professor of Materials Engineering at McGill University. 
+That's when he sent this letter that eventually arrived on the desk of Matthew Cargo, editor for [Mathematical Sciences Publishers](https://msp.org/), whose partner [Marta Cerruti](https://theconversation.com/an-inmates-love-for-math-leads-to-new-discoveries-130123) is Associate Professor of Materials Engineering at McGill University. 
 
 ![havens-letter](/assets/img/havens-haven/havens-letter.jpg)
 
 Her parents are mathematicians and her father, Umberto Cerruti, is a number theorist at the University of Torino in Italy. Umberto Cerruti sent Havens a problem to work on, and Christopher wrote back with a long, complicated solution that turned out to be correct.
 
-Christopher has since published a paper jointly with Cerruti and two other mathematicians, in the journal *Research in Number Theory*, ["Linear fractional transformations and nonlinear leaping convergents of some continued fractions"]([Linear fractional transformations and nonlinear leaping convergents of some continued fractions | SpringerLink](https://link.springer.com/article/10.1007/s40993-020-0187-5)). He hopes to [inspire other prisoners through mathematics]([Prisoner Discovers New Life In Math And Starts Nonprofit To Help Others Find Hope. – InspireMore](https://www.inspiremore.com/christopher-havens-prison-mathematics-project/)) and has started the [Prison Mathematics Project (PMP)]([Prison Math Project – The Prison Mathematics Projects](https://www.prisonmathproject.org/)) to connect inmates with mathematicians. They hold bi-weekly meetings to discuss math problems and work on larger projects. Beginning in 2016 the PMP has been holding Pi Day celebrations.
+Christopher has since published a paper jointly with Cerruti and two other mathematicians, in the journal *Research in Number Theory*, ["Linear fractional transformations and nonlinear leaping convergents of some continued fractions"](https://link.springer.com/article/10.1007/s40993-020-0187-5). He hopes to [inspire other prisoners through mathematics](https://www.inspiremore.com/christopher-havens-prison-mathematics-project/) and has started the [Prison Mathematics Project (PMP)](https://www.prisonmathproject.org/) to connect inmates with mathematicians. They hold bi-weekly meetings to discuss math problems and work on larger projects. Beginning in 2016 the PMP has been holding Pi Day celebrations.
 
-"You should never set aside your dreams and goals and dismiss them as impossible just because you are institutionally challenged," [Havens said]([Easy As Pi: Inmates Find Motivation Through Mathematics | Washington State Department of Corrections](https://www.doc.wa.gov/news/2017/03172017.htm)). "Today is not just a day to celebrate pi, but mathematics as a whole and celebrate an opportunity we have to move our lives in a positive direction."
+"You should never set aside your dreams and goals and dismiss them as impossible just because you are institutionally challenged," [Havens said](https://www.doc.wa.gov/news/2017/03172017.htm). "Today is not just a day to celebrate pi, but mathematics as a whole and celebrate an opportunity we have to move our lives in a positive direction."
 
-Besides having a research paper published, Chris also submitted a problem to [*Math Horizons*]([Math Horizons | Mathematical Association of America (maa.org)](https://www.maa.org/press/periodicals/math-horizons)), a magazine published by the [Mathematical Association of America (MAA)]([Homepage | Mathematical Association of America (maa.org)](https://www.maa.org/)) meant to be accessible to undergraduate mathematics majors. The [problem]([A Self-Taught Math Genius Wrote This Riddle While Serving Time in Prison. Can You Solve It? (popularmechanics.com)](https://www.popularmechanics.com/science/math/a35520893/havens-math-horizons-problem/)) is this, *What is the smallest positive integer $y$ such that $1729y^2 + 1$ is a perfect square*? This is a form of Pell's Equation, and there's a connection to the mathematicians Srinivasa Ramanujan and G. H. Hardy. 
+Besides having a research paper published, Chris also submitted a problem to [*Math Horizons*](https://www.maa.org/press/periodicals/math-horizons), a magazine published by the [Mathematical Association of America (MAA)](https://www.maa.org/) meant to be accessible to undergraduate mathematics majors. The [problem](https://www.popularmechanics.com/science/math/a35520893/havens-math-horizons-problem/) is this, *What is the smallest positive integer $y$ such that $1729y^2 + 1$ is a perfect square*? This is a form of Pell's Equation, and there's a connection to the mathematicians Srinivasa Ramanujan and G. H. Hardy. 
 
 Ramanujan was a self-taught mathematician from India who produced thousands of new ideas in number theory. In early January 1913, he sent a letter with some of his results to Hardy who was at Cambridge at the time. Later, Hardy said that the letters were "certainly the most remarkable I have received" and that Ramanujan was "a mathematician of the highest quality, a man of altogether exceptional originality and power". He invited Ramanujan to visit him in England, and Ramanujan arrived in April 1914.
 
@@ -41,7 +41,7 @@ $$
 1729 = 1^3 + 12^3 = 9^3 + 10^3
 $$
 
-The number $1729$ is now known as a [taxicab number]([Taxicab number - Wikipedia](https://en.wikipedia.org/wiki/Taxicab_number)) or the Ramanujan-Hardy number and is the number Havens chose for the problem. The drawing at the top of Hardy and Ramanujan was done by Chris Havens.
+The number $1729$ is now known as a [taxicab number](https://en.wikipedia.org/wiki/Taxicab_number) or the Ramanujan-Hardy number and is the number Havens chose for the problem. The drawing at the top of Hardy and Ramanujan was done by Chris Havens.
 
 ## Pell's Equations
 
@@ -53,17 +53,17 @@ for integers $x,y$, and $n$. The problem that Chris Havens proposed is to find $
 $$
 x^2 - 1729y^2 = 1.
 $$
-In the 7th century, Indian mathematician and astronomer [Brahmagupta]([Brahmagupta - Biography, Facts and Pictures (famousscientists.org)](https://www.famousscientists.org/brahmagupta/)) first studied equations in this form (he called it the *Varga-Prakriti* equation), and Pell had nothing to do with them. This is an example of Stigler's Law of Eponymy, named for University of Chicago statistics professor Stephen Stigler, which says that no scientific discovery is named after its original discoverer. Stigler's Law is itself an example, having been earlier described by sociologist Robert K. Merton. Leonard Euler misattributed the equations to Pell rather than to the several earlier mathematicians who worked on similar equations including  [Diophantus]([Diophantus - Wikipedia](https://en.wikipedia.org/wiki/Diophantus)), [Bhāskara II]([Bhāskara II - Wikipedia](https://en.wikipedia.org/wiki/Bhāskara_II)), [Narayaṇa Paṇḍita]([Narayana Pandita (mathematician) - Wikipedia](https://en.wikipedia.org/wiki/Narayana_Pandita_(mathematician)), [William Brouncker]([William Brouncker, 2nd Viscount Brouncker - Wikipedia](https://en.wikipedia.org/wiki/William_Brouncker,_2nd_Viscount_Brouncker)), and [Pierre de Fermat]([Pierre de Fermat - Wikipedia](https://en.wikipedia.org/wiki/Pierre_de_Fermat)).
+In the 7th century, Indian mathematician and astronomer [Brahmagupta](https://www.famousscientists.org/brahmagupta/) first studied equations in this form (he called it the *Varga-Prakriti* equation), and Pell had nothing to do with them. This is an example of Stigler's Law of Eponymy, named for University of Chicago statistics professor Stephen Stigler, which says that no scientific discovery is named after its original discoverer. Stigler's Law is itself an example, having been earlier described by sociologist Robert K. Merton. Leonard Euler misattributed the equations to Pell rather than to the several earlier mathematicians who worked on similar equations including  [Diophantus](https://en.wikipedia.org/wiki/Diophantus), [Bhāskara II](https://en.wikipedia.org/wiki/Bhāskara_II), [Narayaṇa Paṇḍita](https://en.wikipedia.org/wiki/Narayana_Pandita_(mathematician)), [William Brouncker](https://en.wikipedia.org/wiki/William_Brouncker,_2nd_Viscount_Brouncker), and [Pierre de Fermat](https://en.wikipedia.org/wiki/Pierre_de_Fermat).
 
-The equations are hyperbolic functions and have solutions at points where both $x$ and $y$ are integers. This is an example of the equation $x^2 - 2y^2 = 1$ plotted in [Desmos]([Desmos | Graphing Calculator](https://www.desmos.com/calculator)). Use "x^2-2y^2=1" to plot the function, and plot solutions in the form $(x,y)$ as shown on the second line.
+The equations are hyperbolic functions and have solutions at points where both $x$ and $y$ are integers. This is an example of the equation $x^2 - 2y^2 = 1$ plotted in [Desmos](https://www.desmos.com/calculator). Use "x^2-2y^2=1" to plot the function, and plot solutions in the form $(x,y)$ as shown on the second line.
 
 ![pells-equation-x^2-2y^2=1](/assets/img/havens-haven/pells-equation-x^2-2y^2=1.png)
 
-In the 12th century, [Bhāskara II]([Bhāskara II Biography - Childhood, Life Achievements & Timeline (thefamouspeople.com)](https://www.thefamouspeople.com/profiles/bhskara-ii-6835.php#:~:text=Bhaskara II, also known as Bhaskara or as,quantities, including the length of the sidereal year.)) (1114–1185) continued the work of Brahmagupta (598–670) and developed an algorithm for finding solutions that he called the *Chakravala Method*. 
+In the 12th century, [Bhāskara II](https://www.thefamouspeople.com/profiles/bhskara-ii-6835.php#:~:text=Bhaskara II, also known as Bhaskara or as,quantities, including the length of the sidereal year.) (1114–1185) continued the work of Brahmagupta (598–670) and developed an algorithm for finding solutions that he called the *Chakravala Method*. 
 
 ## The Chakravala
 
- Bhāskara named his method *Chakra* (meaning "wheel") because of its iterative nature. [Shailesh Shirali]([Shailesh Shirali – Sahyadri School](http://sahyadrischool.org/shailesh-shirali/)) is a mathematician at the [Sahyadri School]([Sahyadri School – Krishnamurti Foundation India](http://sahyadrischool.org/)) in India who wrote ["The Chakravala Method - Zeroing in on a Solution"]([03-chakravala (1).pdf (apfstatic.s3.ap-south-1.amazonaws.com)](http://apfstatic.s3.ap-south-1.amazonaws.com/s3fs-public/03-chakravala (1).pdf)) in the mathematics journal [At Right Angles]([At Right Angles – Mathematics Journal from Azim Premji Foundation | EduTech Tips (wordpress.com)](https://edutechtips.wordpress.com/2012/07/15/at-right-angles-mathematics-journal-from-azim-premji-foundation/)). This description of the Chakravala is from his paper. 
+ Bhāskara named his method *Chakra* (meaning "wheel") because of its iterative nature. [Shailesh Shirali](http://sahyadrischool.org/shailesh-shirali/) is a mathematician at the [Sahyadri School](http://sahyadrischool.org/) in India who wrote ["The Chakravala Method - Zeroing in on a Solution"](http://apfstatic.s3.ap-south-1.amazonaws.com/s3fs-public/03-chakravala (1).pdf) in the mathematics journal [At Right Angles](https://edutechtips.wordpress.com/2012/07/15/at-right-angles-mathematics-journal-from-azim-premji-foundation/). This description of the Chakravala is from his paper. 
 
 The first step to understanding the Chakravala comes from the Diophantus-Brahmagupta-Fibonacci identity,
 $$
@@ -146,13 +146,13 @@ The trick to finding a solution for $x^2 - ny^2 = 1$ is to start with an "almost
   $$
   Repeat the second and third steps until $k' = 1$. 
 
-Does the Chakravala ever end, or does the wheel keep on turning? Fortunately, the algorithm converges, that is, it eventually gets to $k=1$. The proof is given by A. Bauval in ["An elementary proof of the halting property for the Chakravala Algorithm"]([1406.6809v1.pdf (arxiv.org)](https://arxiv.org/pdf/1406.6809v1.pdf)). 
+Does the Chakravala ever end, or does the wheel keep on turning? Fortunately, the algorithm converges, that is, it eventually gets to $k=1$. The proof is given by A. Bauval in ["An elementary proof of the halting property for the Chakravala Algorithm"](https://arxiv.org/pdf/1406.6809v1.pdf). 
 
 But to make the Chakravala work requires understanding modular arithmetic.
 
 ## Modular Arithmetic
 
-In [number theory]([Number Theory - Number Theory (stanford.edu)](https://crypto.stanford.edu/pbc/notes/numbertheory/)) it's often useful to describe a number by its remainder when divided by another number, so if 
+In [number theory](https://crypto.stanford.edu/pbc/notes/numbertheory/) it's often useful to describe a number by its remainder when divided by another number, so if 
 $$
 a = qn+r
 $$
@@ -387,7 +387,7 @@ $$
 1089 - 17 \times 64 &= 1089 - 1088 = 1.
 \end{align}
 $$
-Using the [PARI/GP]([PARI/GP Development Headquarters (u-bordeaux.fr)](http://pari.math.u-bordeaux.fr/)) language, the code [chakravala.gp](https://gist.github.com/XerxesZorgon/e746ca856e8e0e51bbab1c6874dc6ded) (saved on GitHub) finds the smallest values of $a$ and $b$ for a given $n$. This is a screenshot of the solution to Chris Havens' problem with the Ramanujan-Hardy Taxicab number 1729:
+Using the [PARI/GP](http://pari.math.u-bordeaux.fr/) language, the code [chakravala.gp](https://gist.github.com/XerxesZorgon/e746ca856e8e0e51bbab1c6874dc6ded) (saved on GitHub) finds the smallest values of $a$ and $b$ for a given $n$. This is a screenshot of the solution to Chris Havens' problem with the Ramanujan-Hardy Taxicab number 1729:
 
  ![havens-hardy-ramanujan-solution](/assets/img/havens-haven/havens-hardy-ramanujan-solution.png)
 
@@ -397,6 +397,6 @@ The Prison Mathematics Projects likes to hear from people willing to volunteer t
 
 "In early 2012, a prisoner by the name [Christopher Havens](https://www.christopherhavensmath.com/) began studying mathematics for the very first time within the prison inside of prison. Christopher was in a form of isolation that we call solitary confinement… prisoners know it as “the hole”. Having no other form of stimulation, mathematics occupied every hour of Christopher’s days, lasting the better part of a year until he was released back into the general population. In so many cases, the negative effects of prolonged isolation manifests itself through the behaviors in both the short and the long term. However, this case is one where a mix of isolation and the transformative powers of mathematics caused Christopher to undergo a steady chain of personal growth while igniting within him a passion for mathematics. "
 
-If you have some ability in mathematics and would like to volunteer, you can [submit your name]([Volunteer – Prison Math Project](https://www.prisonmathproject.org/volunteer/)) and email address, and the PMP will connect you with an inmate to become their "pen pal". [Donations]([Donate – Prison Math Project](https://www.prisonmathproject.org/donate/)) are also greatly appreciated. 
+If you have some ability in mathematics and would like to volunteer, you can [submit your name](https://www.prisonmathproject.org/volunteer/) and email address, and the PMP will connect you with an inmate to become their "pen pal". [Donations](https://www.prisonmathproject.org/donate/) are also greatly appreciated. 
 
 ![pmp](/assets/img/havens-haven/pmp.jpg)
