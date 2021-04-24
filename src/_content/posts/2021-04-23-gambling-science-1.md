@@ -185,26 +185,21 @@ Import the games data using File $\rightarrow$ Import Dataset $\rightarrow$ From
 
 To run the code, download `MLB_brier.r` from [GitHub](https://gist.github.com/XerxesZorgon/6613be32ded7bd64dfc960a64ecec359), load it into [RStudio](https://www.rstudio.com/), click on "Source" in the upper right of the Editor pane, then create lookup tables,
 
-```R
-lookup <- make_lookup_tables(MLB)
-```
+`lookup <- make_lookup_tables(MLB)`
 
 You may need to update the [Tidyverse](https://www.tidyverse.org/) package (in an R console - see [IDE keeps getting stuck in a loop to restart R when trying to install a package that is already installed · Issue #2656 · rstudio/rstudio (github.com)](https://github.com/rstudio/rstudio/issues/2656)). 
 
 In the Environment pane, you should see variables "games", "MLB" and "lookup". Now you can compare the two predictor methods,
 
-```R
-BS <- brier_score(lookup,MLB,games)
-```
+`BS <- brier_score(lookup,MLB,games)`
 
 When it finishes running, check the values of the Skiena and Bayes predictors,
 
-```R
-> BS$skiena
-0.3107963 
-> BS$bayes
-0.2354583 
-```
+`> BS$skiena
+0.3107963`
+
+`> BS$bayes
+0.2354583 `
 
 A lower score indicates a better predictor, so this says that the Bayes method is better than Skiena's, but to be fair, Skiena chose the exponent $\alpha = 0.4$ for predicting Jai Alai, not baseball. This shows that we need to be careful about choosing the best prediction method, though.
 
