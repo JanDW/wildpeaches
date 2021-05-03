@@ -1,0 +1,20 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /app.webmanifest
+---
+{
+  "lang": "{{ site.language }}",
+  "name": "{{ site.name }}",
+  "short_name": "{{ site.name }}",
+  "description": "{{ site.tagline }}",
+  "theme_color": "{{ site.themeColor }}",
+  "background_color": "{{ site.backgroundColor }}",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["minimal-ui"],
+  "icons": [{
+    "src": "{{ site.icon.url }}",
+    "sizes": "{{ site.icon.sizes }}",
+    "type": "{{ site.icon.type }}"
+  }]
+}
