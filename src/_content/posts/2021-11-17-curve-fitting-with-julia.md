@@ -1,6 +1,6 @@
 ---
-title: Curve fitting with Julia
-subtitle: Why oil production may not follow a Gaussian function
+title: Curve Fitting with Julia
+subtitle: Why Oil Production May Not Follow a Gaussian Function
 author: John Peach
 lede:
 hero:
