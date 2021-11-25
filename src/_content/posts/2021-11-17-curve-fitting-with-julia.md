@@ -4,11 +4,11 @@ subtitle: Why Oil Production May Not Follow a Gaussian Function
 author: John Peach
 lede:
 hero:
-  url: /assets/img/curve-fitting-with-julia/huntington-beach.png
+  url: /assets/img/curve-fitting-with-julia/huntington-beach.jpeg
   alt:
 tags: [math]
 keywords: [curve fitting, Julia, Weierstrass approximation, Hubbert peak theory, Seneca cliff]
-socialImg: /assets/img/curve-fitting-with-julia/huntington-beach.png
+socialImg: /assets/img/curve-fitting-with-julia/huntington-beach.jpeg
 ---
 
 
