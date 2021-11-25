@@ -12,13 +12,10 @@ socialImg: /assets/img/curve-fitting-with-julia/huntington-beach.jpeg
 ---
 
 
-
-> ```
-> “How did you go bankrupt?” Bill asked. 
-> “Two ways,” Mike said. “Gradually, then suddenly.” 
-> ```
-
-Ernest Hemingway, *The Sun Also Rises*
+>“How did you go bankrupt?” Bill asked.
+>“Two ways,” Mike said. “Gradually, then suddenly.”
+>
+>—Ernest Hemingway, The Sun Also Rises
 
 ## The Weierstrass Approximation Theorem
 
